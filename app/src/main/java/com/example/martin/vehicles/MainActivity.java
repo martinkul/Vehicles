@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
 
                     imgVehicle.setImageResource(0);
 
-                    Snackbar.make(findViewById(android.R.id.content), "The vehicle has reached it's destination", Snackbar.LENGTH_SHORT).show();
+                    Snackbar.make(findViewById(android.R.id.content), "The vehicle has reached its destination", Snackbar.LENGTH_SHORT).show();
                 }
             });
 
