@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:paddingEnd="20dp"
+              android:paddingStart="20dp"
+              android:paddingTop="20dp"
+              android:paddingBottom="20dp"
+              android:clipToPadding="false"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:focusableInTouchMode="true"
+              android:background="@color/colorDialog">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clipToPadding="false"
+        android:layout_marginEnd="-20dp"
+        android:layout_marginStart="-20dp"
+        android:layout_marginTop="-20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp">
+
+        <ImageView
+            android:id="@+id/clear_dialog"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_exit"
+            android:layout_margin="7dp"
+            android:adjustViewBounds="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:textSize="17sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/lbl_title"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="5dp"
+            android:textAlignment="center" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/lbl_title"
+            android:background="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_attributes"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:text="This vehicle is"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/lbl_status"
+            android:layout_marginStart="4dp"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_start"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorText"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:textSize="15sp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
